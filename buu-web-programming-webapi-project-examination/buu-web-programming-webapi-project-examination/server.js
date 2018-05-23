@@ -12,7 +12,7 @@ app.use(cors())
 app.get('/contacts', (req,res) => {
     res.json(contacts)
 })
-
+//get
 /// TODO: Develop POST /contacts
 app.post('/contacts', (req, res) => {
     let newContacts = {
