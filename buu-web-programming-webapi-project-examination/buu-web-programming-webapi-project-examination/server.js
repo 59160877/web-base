@@ -13,10 +13,15 @@ app.get('/contacts', (req,res) => {
     res.json(contacts)
 })
 
-
-
 /// TODO: Develop POST /contacts
-post
+app.post('/contacts', (req, res) => {
+    let newContacts = {
+        name : "test",
+        phone : 0
+    }
+    contact.push(newContacts)
+    res.status(201).send()
+})
 
 
 app.listen(3000, () => {
